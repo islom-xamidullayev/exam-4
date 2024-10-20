@@ -1,0 +1,22 @@
+// default : mobile bo'ladi
+
+@mixin mobile-large {
+  // 640px - 999px;
+  @media (max-width: 981px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  // 1000px - 1239px
+  @media (max-width: 1430px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  // 1240px --- .......
+  @media (max-width: 566px) {
+    @content;
+  }
+}

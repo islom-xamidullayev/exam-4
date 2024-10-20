@@ -1,0 +1,108 @@
+.hero {
+  margin-top: 66px;
+  &__wrapper {
+    position: relative;
+  }
+
+  .is {
+    width: 100%;
+    height: 569px;
+    object-fit: cover;
+  }
+
+  &__bg1 {
+    position: absolute;
+    z-index: -1;
+    top: 48px;
+  }
+
+  &__bg2 {
+    position: absolute;
+    z-index: 2;
+  }
+
+  &__card {
+    position: absolute;
+    top: 200px;
+    left: 138px;
+    z-index: 3;
+    max-width: 341px;
+
+    h1 {
+      color: #322e29;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 56px;
+      text-align: left;
+      margin-top: 17px;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 32px;
+      letter-spacing: 0.01em;
+      text-align: left;
+      margin-top: 24px;
+    }
+  }
+
+  &__photos {
+    position: absolute;
+
+    top: 114px;
+    left: 1150px;
+    gap: 16px;
+    border-radius: 2px 0px 0px 0px;
+    opacity: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@include tablet {
+  .hero {
+    &__card {
+      left: 30px;
+      top: 160px;
+    }
+
+    &__photos {
+      left: 596px;
+      top: 50px;
+    }
+  }
+}
+
+@include mobile-large {
+  .hero {
+    .is {
+      height: 690px;
+    }
+    &__card {
+      left: 30px;
+      top: 259px;
+    }
+
+    &__photos {
+      left: 30px;
+      top: 650px;
+      flex-direction: row;
+    }
+  }
+}
+
+@include mobile {
+  .hero {
+    &__photos {
+      left: 30px;
+      top: 650px;
+      flex-direction: row;
+
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}
