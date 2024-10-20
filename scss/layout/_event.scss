@@ -33,7 +33,15 @@
     margin: 14px 0;
     color: #555;
   }
+ .bos {
+    display: block;
+    margin: auto;
+    margin-top: 65px;
+    margin-bottom: 65px;
+    backdrop-filter: blur(48px);
+    box-shadow: #BB8C4780  10px 20px 60px 24px;
 
+ }
   .data__wrapper {
     display: grid;
     grid-template-columns: 65% 25%;
